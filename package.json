@@ -1,0 +1,23 @@
+{
+  "name": "aynm-portal",
+  "version": "1.0.0",
+  "description": "Membership registration and organization-information portal (Ahmad Yari Northern Movement)",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "gen-key": "node scripts/gen-key.js",
+    "create-admin": "node --disable-warning=ExperimentalWarning scripts/create-admin.js",
+    "seed:demo": "node --disable-warning=ExperimentalWarning scripts/seed-demo.js",
+    "purge": "node --disable-warning=ExperimentalWarning scripts/purge.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js",
+    "import:locations": "node --disable-warning=ExperimentalWarning scripts/import-locations.js",
+    "build:locations": "node scripts/build-locations.js"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.34.5"
+  }
+}
