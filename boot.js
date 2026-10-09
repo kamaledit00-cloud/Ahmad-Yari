@@ -1,0 +1,1 @@
+window.AYNM.start();
